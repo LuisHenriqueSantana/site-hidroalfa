@@ -10,9 +10,18 @@
   transform: translateX(700px);
   opacity: 0;
 }
+
+.container {
+  overflow-x: hidden;
+}
+
 .scroll2 {
-  transform: translateX(700px);
-  display: none;
+  transform: translateX(100%);
+  opacity: 0;
+}
+.scroll3 {
+  transform: translateX(-100%);
+  opacity: 0;
 }
 
 body {

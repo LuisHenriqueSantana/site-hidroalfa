@@ -18,13 +18,28 @@ function App() {
       gsap.registerPlugin(ScrollTrigger);
       gsap.to(".scroll2", {
         x: 0,
-        display: "block",
-        duration: 1,
+        visibility: "visible",
+        opacity: 1,
         scrollTrigger:{
           trigger: ".scroll2",
-          markers: true,
           start: "top 90%",
         }
+      })
+      gsap.registerPlugin(ScrollTrigger);
+      gsap.to(".scroll3", {
+        x: 0,
+        visibility: "visible",
+        opacity: 1,
+        scrollTrigger:{
+          trigger: ".scroll3",
+          start: "top 90%",
+        }
+      })
+      gsap.registerPlugin(ScrollTrigger);
+      gsap.to(".scroll1", {
+        x: 0,
+        visibility: "visible",
+        opacity: 1,
       })
   
       return () => {
@@ -34,13 +49,15 @@ function App() {
 
   return (
     <>
-      <div className="scroll"><Header/></div>
-      <div className="scroll"><HeaderFixo/></div>
-      <Banner/>
-      <Garantias/>
-      <div className="scroll2"><Regioes/></div>
-      <Whatsflu/>
-      <Fotter/>
+      <div className="container">
+        <div className="scroll1"><Header/></div>
+        <div className="scroll1"><HeaderFixo/></div>
+        <div className="scroll"><Banner/></div>
+        <div className="scroll3"><Garantias/></div>
+          <div className="scroll2"><Regioes/></div>
+        <Whatsflu/>
+        <div className="scroll3"><Fotter/></div>
+      </div>
     </>
   )
 }
