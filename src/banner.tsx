@@ -1,5 +1,5 @@
 import React from "react";
-import bannner from "./assets/Plumbing Business Card Blue White Bold Typographic Style.png"
+import bannner from "./assets/desentupimento-cozinha.jpg"
 import "./index.css";
 
 export function Banner(){

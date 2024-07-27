@@ -6,6 +6,15 @@
   font-weight: bolder;
 }
 
+.scroll1 {
+  transform: translateX(700px);
+  opacity: 0;
+}
+.scroll2 {
+  transform: translateX(700px);
+  display: none;
+}
+
 body {
   height: 100%;
   background-color: bisque;
@@ -18,7 +27,6 @@ body {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background-color: var(--default-background-color);
   z-index: 1;
   display: flex;
   justify-content: center;
@@ -154,6 +162,7 @@ a:hover {
   filter: brightness(50%);
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 .info {
@@ -307,43 +316,43 @@ a:hover {
 }
 
 #bg1 {
-  background-image: url(assets/desentupimento-cozinha.jpg);
+  background-image: url(imagens/zona-oeste-sp-1024x574.jpg);
   background-size: cover;
   width: 100%;
   height: 100%;
 }
 #bg2 {
-  background-image: url(zona-norte.jpg);
+  background-image: url(imagens/zona-norte.jpg);
   background-size: cover;
   width: 100%;
   height: 100%;
 }
 #bg3 {
-  background-image: url(zona-leste-sp-1024x574.jpg);
+  background-image: url(imagens/zona-leste-sp-1024x574.jpg);
   background-size: cover;
   width: 100%;
   height: 100%;
 }
 #bg4 {
-  background-image: url(zona-oeste-sp-1024x574.jpg);
+  background-image: url(imagens/zona-sul-sp-1024x574.jpg);
   background-size: cover;
   width: 100%;
   height: 100%;
 }
 #bg5 {
-  background-image: url(centro-sp.jpg);
+  background-image: url(imagens/centro-sp.jpg);
   background-size: cover;
   width: 100%;
   height: 100%;
 }
 #bg6 {
-  background-image: url(interior.jpg);
+  background-image: url(imagens/interior.jpg);
   background-size: cover;
   width: 100%;
   height: 100%;
 }
 #bg7 {
-  background-image: url(litoral-1024x574.jpg);
+  background-image: url(imagens/litoral-1024x574.jpg);
   background-size: cover;
   width: 100%;
   height: 100%;
