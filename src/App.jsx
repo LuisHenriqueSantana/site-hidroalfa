@@ -46,12 +46,18 @@ function App() {
         gsap.killTweensOf(".relogio")
       }
     }, [])
+      gsap.registerPlugin(ScrollTrigger);
+      gsap.to(".text", {
+        y: 0,
+        visibility: "visible",
+        opacity: 1,
+      })
 
   return (
     <>
       <div className="container">
-        <div className="scroll1"><Header/></div>
-        <div className="scroll1"><HeaderFixo/></div>
+        <div><Header/></div>
+        <div><HeaderFixo/></div>
         <div className="scroll"><Banner/></div>
         <div className="scroll3"><Garantias/></div>
           <div className="scroll2"><Regioes/></div>

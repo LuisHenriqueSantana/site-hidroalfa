@@ -14,7 +14,7 @@ export function Banner(){
                 <h4>DESENTUPIDORA <span className="verde">24H</span></h4>
                 <p>Visita gratuita imediata</p>
             </div>
-            <div className="cta">
+            <div className="cta scroll1">
                 <p>SOLICITE UM ORÇAMENTO</p>
             </div>
        </div>
